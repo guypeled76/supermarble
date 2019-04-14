@@ -12,6 +12,9 @@ class BoardCell {
 
         marbleImg.draggable = true;
 
+        this.attach(this.marbleImg, "click", this.dragstart)
+        this.attach(this.backgroundImg, "click", this.drop)
+
         this.attach(this.marbleImg, "dragstart", this.dragstart)
         this.attach(this.marbleImg, "dragend", this.dragend)
 
