@@ -152,9 +152,9 @@ class Board {
         this.special_x =  Math.floor(this.width / 2);
         this.special_y =  Math.floor(this.height / 2);
 
-        this.normal = "/resources/thehole.png";
-        this.special = "/resources/hole.png";
-        this.marble = "/resources/marble.png";
+        this.normal = "resources/thehole.png";
+        this.special = "resources/hole.png";
+        this.marble = "resources/marble.png";
     }
 
     addOccupiedCell(cell) {
