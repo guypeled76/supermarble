@@ -122,12 +122,12 @@ class BoardCell {
         }
 
         var firstCell = this.board.getItem(this.x + dx, this.y + dy);
-        if(!firstCell.isEmpty()){
+        if(firstCell == null || !firstCell.isEmpty()){
             return false;
         }
 
         var secondCell = this.board.getItem(this.x + dx * 2, this.y + dy * 2);
-        if(!secondCell.isEmpty()){
+        if(secondCell == null || !secondCell.isEmpty()){
             return false;
         }
 
