@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Super Marble</title>
+        <script type="text/javascript" src="/script.js"></script>
+        <link rel="stylesheet" type="text/css" href="/styles.css" />
+        <script>
+        
+            var board = null;
+
+            function init(element) {
+                board = new Board(11, 11, 50, 1);
+                board.init(element);
+            }
+
+        </script>
+    </head>
+    <body onload="init(document.getElementById('board'))">
+        <div id="board" class="board">
+
+        </div>
+        <button onclick="board.undo()()">&lt;&lt;</button>
+        <button onclick="board.reset()">reset</button>
+    </body>
+</html>
